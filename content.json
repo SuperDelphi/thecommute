@@ -1,0 +1,23 @@
+[
+    {
+        "id": "sXVK",
+        "title": "Un titre",
+        "audioSrc": "audio/sXVK.mp3",
+        "imageSrc": "images/sXVK.jpg",
+        "transcript": "Ceci est un exemple de transcription."
+    },
+    {
+        "id": "sKOE",
+        "title": "Un autre titre",
+        "audioSrc": "audio/sKOE.mp3",
+        "imageSrc": "images/sKOE.jpg",
+        "transcript":"Ceci est un exemple de transcription."
+    },
+    {
+        "id": "sQLM",
+        "title": "Un titre",
+        "audioSrc": "audio/sQLM.mp3",
+        "imageSrc": "images/sQLM.jpg",
+        "transcript":"Ceci est un exemple de transcription."
+    }
+]
