@@ -10,7 +10,7 @@ export default class Scanner {
     }
 
     async init() {
-        this.html5Qrcode = new Html5Qrcode(this.canvasId, { verbose: true });
+        this.html5Qrcode = new Html5Qrcode(this.canvasId, { verbose: false });
 
         try {
             let hasPermission = false;
