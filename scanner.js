@@ -10,7 +10,7 @@ export default class Scanner {
     }
 
     async init() {
-        this.html5Qrcode = new Html5Qrcode(this.canvasId);
+        this.html5Qrcode = new Html5Qrcode(this.canvasId, { verbose: true });
 
         try {
             let hasPermission = false;
@@ -91,8 +91,6 @@ export default class Scanner {
     }
 
     onScanFailure(error) {}
-
-    // TODO: Mettre caméra arrière
 
     stop() {
         if (this.html5Qrcode && this.html5Qrcode.isScanning) {
