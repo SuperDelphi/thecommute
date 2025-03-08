@@ -2,22 +2,22 @@
     {
         "id": "sXVK",
         "title": "Un titre",
-        "audioSrc": "audio/sXVK.mp3",
-        "imageSrc": "images/sXVK.jpg",
+        "audioSrc": "audio/stamps/sXVK.mp3",
+        "imageSrc": "images/stamps/sXVK.png",
         "transcript": "Ceci est un exemple de transcription."
     },
     {
         "id": "sKOE",
         "title": "Un autre titre",
-        "audioSrc": "audio/sKOE.mp3",
-        "imageSrc": "images/sKOE.jpg",
+        "audioSrc": "audio/stamps/sKOE.mp3",
+        "imageSrc": "images/stamps/sKOE.png",
         "transcript":"Ceci est un exemple de transcription."
     },
     {
         "id": "sQLM",
         "title": "Un titre",
-        "audioSrc": "audio/sQLM.mp3",
-        "imageSrc": "images/sQLM.jpg",
+        "audioSrc": "audio/stamps/sQLM.mp3",
+        "imageSrc": "images/stamps/sQLM.png",
         "transcript":"Ceci est un exemple de transcription."
     }
 ]
