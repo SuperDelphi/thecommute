@@ -46,10 +46,17 @@ function collectStamp(stampId) {
 }
 
 function loadMain() {
-    navigateToPage("main");
+    navigateToPage("p-main");
 
     if (!scanner) {
-        scanner = new Scanner("scanner");
+        try {
+            scanner = new Scanner("scanner");
+            scanner.init();
+        } catch (err) {
+            console.error("Error creating scanner: ", err);
+        }
+    } else if (scanner && typeof scanner.stop === "function" && typeof scanner.init === "function") {
+        scanner.stop();
         scanner.init();
     }
 }
