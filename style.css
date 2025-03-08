@@ -1,13 +1,75 @@
 * {
-    font-family: "Darumadrop One", sans-serif;
+    font-family: "Rowdies", sans-serif;
     font-weight: 400;
     font-style: normal;
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    background-color: #2456ac;
+    color: white;
+}
+
+:root {
+    --primary: #2456ac;
+}
+
+#pages {
+    width: 100vw;
+    height: 100vh;
 }
 
 .page {
     display: none;
+    width: 100%;
 }
 
 .page.active {
     display: block;
+}
+
+/* Buttons */
+
+button {
+    border: none;
+    background-color: white;
+    font-size: 1.5rem;
+    color: var(--primary);
+    padding: 8px 40px;
+    border-radius: 50px;
+    vertical-align: middle;
+}
+
+/* Welcome Page */
+
+#p-welcome {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#logo {
+    width: 85%;
+    max-width: 300px;
+    margin-bottom: 35px;
+}
+
+#p-welcome footer {
+    position: absolute;
+    bottom: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 35px;
+}
+
+#p-welcome footer span {
+    font-size: 1.3rem;
+}
+
+#p-welcome footer aside {
+    font-size: 0.75rem;
 }
