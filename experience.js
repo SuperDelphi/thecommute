@@ -1,3 +1,7 @@
+import Scanner from "./scanner.js";
+
+console.log(Scanner);
+
 let collectedStamps = [];
 let stamps = [];
 
