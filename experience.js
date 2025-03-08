@@ -28,7 +28,7 @@ function navigateToPage(page) {
 }
 
 async function fetchStamps() {
-    return fetch("/stamps.json")
+    return fetch("stamps.json")
         .then(response => response.json());
 }
 
@@ -47,7 +47,10 @@ function collectStamp(stampId) {
 
 function loadMain() {
     navigateToPage("p-main");
+    startScanner();
+}
 
+function startScanner() {
     if (!scanner) {
         try {
             scanner = new Scanner("scanner");

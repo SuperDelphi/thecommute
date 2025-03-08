@@ -7,9 +7,20 @@
         <script src="experience.js" type="module"></script>
         <link rel="stylesheet" href="style.css">
 
+        <!-- Base tag -->
+        <script>
+            const isDevelopment = window.location.hostname === "localhost" || window.location.hostname === "127.0.0.1";
+            const basePath = isDevelopment ? "/" : "thecommute";
+            
+            const baseTag = document.createElement("base");
+            baseTag.href = basePath
+            document.head.appendChild(baseTag);
+        </script>
+
         <!-- Meta -->
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="theme-color" content="#2456ac">
 
         <!-- Favicons -->
         <link rel="apple-touch-icon" sizes="180x180" href="/images/favicons/apple-touch-icon.png">
@@ -26,16 +37,19 @@
         <div id="pages">
             <!-- Welcome page -->
             <div id="p-welcome" class="page active">
-                <img src="images/logo.png" alt="The Commute" id="logo">
-                <button id="start-btn">Commencer</button>
+                <main>
+                    <img src="images/logo.png" alt="The Commute" id="logo">
+                    <button id="start-btn">Commencer</button>
+                </main>
                 <footer>
                     <span>Festival ZERO1 2025</span>
                     <aside>Lola Voisot & Simon Breil</aside>
                 </footer>
             </div>
             <!-- Main page -->
-            <div id="p-main" class="page">
-                <div id="scanner" width="600px"></div>
+            <div id="p-main" class="page active">
+                test
+                <div id="scanner" style="width:500px"></div>
             </div>
         </div>
     </body>
