@@ -31,7 +31,17 @@ body {
     justify-content: center;
     align-items: center;
     border-radius: 15px;
-    height: 400px;
+    max-width: 400px;
+    width: 90%;
+    max-height: 40vh;
+}
+
+#qr-shaded-region {
+    border-color: #00000030 !important;
+}
+
+#qr-shaded-region * {
+    opacity: 0;
 }
 
 /* Buttons */
@@ -94,7 +104,8 @@ button {
 }
 
 #p-main {
-    
+    flex-direction: column;
+    align-items: center;
 }
 
 #pages {
