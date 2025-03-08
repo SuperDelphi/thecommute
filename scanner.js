@@ -7,9 +7,9 @@ export default class Scanner {
     async init() {
         Html5Qrcode.getCameras().then(devices => {
             if (devices && devices.length) {
-                cameraId = devices[0].id;
+                this.cameraId = devices[0].id;
 
-                html5Qrcode.start(
+                this.html5Qrcode.start(
                     { facingMode: "environment"},
                     {
                         fps: 10,

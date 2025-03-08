@@ -1,13 +1,19 @@
 import Scanner from "./scanner.js";
 
-console.log(Scanner);
+// Elements
+let startBtn = null;
 
+let scanner = null;
 let collectedStamps = [];
 let stamps = [];
 
 document.addEventListener("DOMContentLoaded", init);
 
 async function init() {
+    // DOM elements
+    startBtn = document.getElementById("start-btn");
+    startBtn.addEventListener("click", loadMain);
+
     const savedStamps = localStorage.getItem("stamps");
     if (savedStamps) {
         collectedStamps = JSON.parse(savedStamps);
@@ -22,15 +28,28 @@ function navigateToPage(page) {
 }
 
 async function fetchStamps() {
-    return await fetch("/stamps.json")
+    return fetch("/stamps.json")
         .then(response => response.json());
 }
 
 function collectStamp(stampId) {
-    if (collectedStamps.includes(stampId) || !stamps.find(stamp => stamp.id === stampId)) {
+    // Check if the stamp is already collected or if the stamp ID is invalid
+    const isStampCollected = collectedStamps.includes(stampId);
+    const isStampInvalid = !stamps.find(stamp => stamp.id === stampId);
+
+    if (isStampCollected || isStampInvalid) {
         return;
     }
-    console.log("Adding stamp", stampId);
+    
     collectedStamps.push(stampId);
     localStorage.setItem("stamps", JSON.stringify(collectedStamps));
+}
+
+function loadMain() {
+    navigateToPage("main");
+
+    if (!scanner) {
+        scanner = new Scanner("scanner");
+        scanner.init();
+    }
 }
