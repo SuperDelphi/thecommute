@@ -8,6 +8,35 @@
     
 }
 
+@keyframes animate-fade {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+@keyframes animate-fade-out {
+    0% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0;
+    }
+}
+
+@keyframes animate-move {
+    0% {
+        opacity: 0;
+        transform: translateY(25%);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
 * {
     font-family: "Rowdies", sans-serif;
     font-weight: 400;
@@ -17,12 +46,13 @@
 
 body {
     margin: 0;
-    background-color: #2456ac;
+    background-color: var(--secondary);
     color: white;
 }
 
 :root {
     --primary: #2456ac;
+    --secondary: rgb(0, 0, 0)
 }
 
 #scanner-container {
@@ -30,10 +60,15 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    border-radius: 15px;
+    border-radius: 20px;
+    box-shadow: 0 0 30px 0 black, 0 0 200px 0 var(--primary);
+    position: sticky;
+    top: 13px;
+    border: solid 2px #2456acd0;
     max-width: 400px;
-    width: 90%;
+    width: calc(100% - 26px);
     max-height: 40vh;
+    z-index: 5;
 }
 
 #qr-shaded-region {
@@ -47,6 +82,7 @@ body {
 /* Buttons */
 
 button {
+    display: inline-block;
     border: none;
     background-color: white;
     font-size: 1.5rem;
@@ -54,9 +90,43 @@ button {
     padding: 8px 40px;
     border-radius: 50px;
     vertical-align: middle;
+    border: solid transparent 3px;
+    cursor: pointer;
+    transition: border 0.2s;
+}
+
+button:hover, button:focus, button:active {
+    border: solid var(--secondary) 3px;
+    cursor: pointer;
 }
 
 /* Welcome Page */
+
+#headphone-advice {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 25px;
+    height: 100vh;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    animation: animate-fade-out 1s forwards;
+    animation-delay: 3s;
+}
+
+#headphone-advice > div {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+}
+
+#headphone {
+    width: 50px;
+    margin-bottom: 15px;
+}
 
 #p-welcome {
     height: 100vh;
@@ -66,17 +136,26 @@ button {
     background-image: url("images/bg.png");
     background-repeat: repeat;
     background-size: 75px;
-    animation: animate-bg 3s linear infinite;
+    animation: animate-bg 4s linear infinite;
 }
 
 #p-welcome main {
-    background-color: var(--primary);
-    box-shadow: 0 0 100px 50px var(--primary);
+    background-color: #2456aca0;
+    box-shadow: 0 0 100px 100px #2456aca0;
     width: 100%;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    opacity: 0;
+    animation: animate-fade 1s forwards;
+    animation-delay: 4s;
+}
+
+#p-welcome button {
+    opacity: 0;
+    animation: animate-move 1.5s forwards;
+    animation-delay: 0.7s;
 }
 
 #logo {
@@ -87,12 +166,15 @@ button {
 
 #p-welcome footer {
     position: absolute;
-    bottom: 50px;
+    bottom: 35px;
     flex-direction: column;
     align-items: center;
     justify-content: center;
     text-align: center;
     margin-top: 35px;
+    opacity: 0;
+    animation: animate-fade 1s forwards;
+    animation-delay: 4s;
 }
 
 #p-welcome footer span {
@@ -104,6 +186,8 @@ button {
 }
 
 #p-main {
+    min-height: 100vh;
+    background-color: var(--secondary);
     flex-direction: column;
     align-items: center;
 }
@@ -121,4 +205,30 @@ button {
 
 .page.active {
     display: flex !important;
+}
+
+/* Stamps */
+
+.stamp {
+    display: flex;
+    align-items: center;
+}
+
+.stamp > img {
+    width: 50px;
+    transform: rotate(10deg);
+}
+
+#stamp-view {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 100vh;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    z-index: 10;
+    background-color: #08204b7d;
+    backdrop-filter: blur(25px);
 }
