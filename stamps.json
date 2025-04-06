@@ -1,23 +1,189 @@
 [
     {
-        "id": "sXVK",
-        "title": "Un titre",
-        "audioSrc": "audio/stamps/sXVK.mp3",
-        "imageSrc": "images/stamps/sXVK.png",
-        "transcript": "Ceci est un exemple de transcription."
+        "id": "sICO",
+        "title": "Introduction (Coursive)",
+        "audioSrc": "audio/stamps/sICO.mp3",
+        "imageSrc": "images/stamps/sICO.png",
+        "transcript": {
+            "fr": {
+                "00:00:00": "Bienvenue dans The Commute, un expérience audio imaginée pour le Festival ZERO1.",
+                "00:06:50": "Fermez les yeux...",
+                "00:08:17": "Les sons qui vous entourent sont les mêmes que ceux qu'entendaient les Rochelais au XVIIe siècle.",
+                "00:13:95": "De toutes les innombrables rues qui sillonnent La Rochelle,",
+                "00:17:17": "avec son pavement unique patiné par le temps,",
+                "00:20:00": "sa riche histoire et sa constellation de commerces de bouche,",
+                "00:23:83": "la rue Saint-Jean du Pérot est sans conteste l'une des plus charmantes de la ville.",
+                "00:29:09": "C'est pourquoi nous vous proposons de vous accompagner jusqu'à la tour de la Lanterne",
+                "00:33:36": "pour découvrir (ou revisiter) cette rue qui incarne l'invitation permanente à ralentir le pas.",
+                "00:39:48": "Nous vous souhaitons une bonne écoute !"
+            }
+        },
+        "writtenBy": "Simon Breil",
+        "readBy": "Line Voisot"
     },
     {
-        "id": "sKOE",
-        "title": "Un autre titre",
-        "audioSrc": "audio/stamps/sKOE.mp3",
-        "imageSrc": "images/stamps/sKOE.png",
-        "transcript":"Ceci est un exemple de transcription."
+        "id": "sILA",
+        "title": "Introduction (Lanterne)",
+        "audioSrc": "audio/stamps/sILA.mp3",
+        "imageSrc": "images/stamps/sILA.png",
+        "transcript": {
+            "fr": {
+                "00:00:00": "Bienvenue dans The Commute, un expérience audio imaginée pour le Festival ZERO1.",
+                "00:06:50": "Fermez les yeux...",
+                "00:08:17": "Les sons qui vous entourent sont les mêmes que ceux qu'entendaient les Rochelais au XVIIe siècle.",
+                "00:13:95": "De toutes les innombrables rues qui sillonnent La Rochelle,",
+                "00:17:17": "avec son pavement unique patiné par le temps,",
+                "00:20:00": "sa riche histoire et sa constellation de commerces de bouche,",
+                "00:23:83": "la rue Saint-Jean du Pérot est sans conteste l'une des plus charmantes de la ville.",
+                "00:29:09": "C'est pourquoi nous vous proposons de vous accompagner jusqu'à La Coursive",
+                "00:32:99": "pour découvrir (ou revisiter) cette rue qui incarne l'invitation permanente à ralentir le pas.",
+                "00:39:18": "Nous vous souhaitons une bonne écoute !"
+            }
+        },
+        "writtenBy": "Simon Breil",
+        "readBy": "Line Voisot"
     },
     {
-        "id": "sQLM",
-        "title": "Un titre",
-        "audioSrc": "audio/stamps/sQLM.mp3",
-        "imageSrc": "images/stamps/sQLM.png",
-        "transcript":"Ceci est un exemple de transcription."
+        "id": "sLAN",
+        "title": "La tour de la Lanterne",
+        "audioSrc": "audio/stamps/sLAN.mp3",
+        "imageSrc": "images/stamps/sLAN.png",
+        "transcript": {
+            "fr": {
+                "00:00:00": "À mes côtés se tient avec prestance l'une des trois gardiennes médiévales du port.",
+                "00:05:00": "Au terme de sa construction en 1468, et au fil des années,",
+                "00:09:48": "elle fut appelée de bien des manières...",
+                "00:12:03": "Au rythme des événements, elle prit différents noms,",
+                "00:14:63": "comme le plus ancien : celui de la tour du Garrot.",
+                "00:17:63": "Elle tire son nom de son rôle à ses débuts,",
+                "00:20:17": "alors chargée de désarmer les navires de leurs canons à leur entrée dans le port,",
+                "00:24:00": "dans le but de protéger la cité.",
+                "00:26:38": "Si la curiosité d'y mettre un pied vous traverse l'esprit,",
+                "00:29:14": "laissez-vous imprégner par ces pierres chargées d'histoire.",
+                "00:32:41": "Par des ouvrages d'artistes,",
+                "00:34:04": "des graffitis de prisonniers anglais, espagnols ou hollandais",
+                "00:37:40": "ayant séjourné entre ces murs,",
+                "00:39:09": "ou encore observer la ville de La Rochelle sous un angle nouveau depuis son sommet,",
+                "00:43:02": "et se laisser transporter dans l'époque médiévale.",
+                "00:45:62": "De sa dernière pierre posée à 55 mètres de hauteur au XVe siècle jusqu'à nos jours,",
+                "00:50:68": "elle n'a cessé de veiller sur les habitants.",
+                "00:53:00": "Aujourd'hui, la tour de la Lanterne, qui depuis celle-ci garde un œil sur l'horizon,",
+                "00:57:56": "se charge de prévenir les âmes qui habitent La Rochelle",
+                "01:00:31": "d'une invasion maritime qui approcherait."
+            }
+        },
+        "writtenBy": "Théo Courcière",
+        "readBy": "Théo Courcière"
+    },
+    {
+        "id": "sCOU",
+        "title": "La Coursive",
+        "audioSrc": "audio/stamps/sLAN.mp3",
+        "imageSrc": "images/stamps/sLAN.png",
+        "transcript": {
+            "fr": {
+                "00:00:00": "Vous êtes actuellement devant la Coursive, nichée au cœur de La Rochelle.",
+                "00:04:42": "D'abord utilisée comme un couvent par les Pères Carmes au XIIIe siècle,",
+                "00:08:32": "le bâtiment est déjà orné de sa magnifique coquille Saint-Jacques,",
+                "00:11:53": "qui continue à ce jour d'accueillir les visiteurs à l'entrée de la chapelle.",
+                "00:14:85": "Après la Révolution,",
+                "00:16:08": "un certain Monsieur Meschinet de Richemond convertit l'édifice en manufacture des tabacs,",
+                "00:20:90": "tandis que l'espace restant servira d'entrepôt douanier.",
+                "00:23:90": "La manufacture laisse place au Marché aux poissons,",
+                "00:26:50": "ce qui donnera lieu à de nombreux travaux qui vont transformer le bâtiment en profondeur.",
+                "00:30:59": "Après avoir été successivement une salle des sports puis une Maison de la Culture,",
+                "00:34:86": "presque tout sera démoli en 1979 pour devenir La Coursive 3 ans plus tard,",
+                "00:40:13": "puis labellisée Scène nationale de La Rochelle quelques années plus tard.",
+                "00:43:61": "Aujourd'hui, la façade et le cloître encore intacts",
+                "00:46:47": "nous replognent sans cesse dans le passé tumultueux de ce bâtiment iconique de La Rochelle."
+            }
+        },
+        "writtenBy": "Simon Breil",
+        "readBy": "Jean-Baptiste Blondelot"
+    },
+    {
+        "id": "sPO1",
+        "title": "Respirer",
+        "audioSrc": "audio/stamps/sPO1.mp3",
+        "imageSrc": "images/stamps/sPO1.png",
+        "transcript": {
+            "fr": {
+                "00:00:00": "Un chalet s'est construit sur le flanc de la montagne.",
+                "00:02:82": "Loin du bruit, des klaxons, de la pollution.",
+                "00:08:32": "Bordé d'un drap de perles froides,",
+                "00:08:29": "à la lueur de tout astre venant timidement l'éclairer,",
+                "00:11:05": "il se repose.",
+                "00:12:54": "Des cristaux se forment dans son jardin,",
+                "00:14:86": "certains fleurissent lorsque personne ne regarde.",
+                "00:18:24": "Les feuilles mortes,",
+                "00:19:40": "portées par le souvenir d'un automne,",
+                "00:21:23": "passent, sans s'arrêter.",
+                "00:23:83": "Le secret ?",
+                "00:25:25": "Respirer.",
+                "00:26:76": "Ton souffle seul peut dégager la brume,",
+                "00:28:89": "ta respiration fera changer les saisons,",
+                "00:31:30": "tes pulsations seront partagées avec eux.",
+                "00:34:29": "Au coin d'un feu,",
+                "00:35:45": "crépitant,",
+                "00:36:45": "le chalet vit.",
+                "00:38:11": "Et chacun peut le rejoindre.",
+                "00:39:64": "Le faire sien.",
+                "00:41:66": "Ralentis simplement.",
+                "00:43:02": "Prends le temps d'observer.",
+                "00:44:64": "Et loin de l'automne,",
+                "00:45:75": "loin des feuilles que tu laisseras passer,",
+                "00:47:76": "à travers le brouillard que tu viendras dissiper,",
+                "00:50:57": "tu le trouveras.",
+                "00:51:82": "Ton propre chalet.",
+                "00:53:89": "Ferme les yeux.",
+                "00:55:01": "Guide ta lampe sur le flanc de cette montagne,",
+                "00:57:30": "trouve un endroit où t'installer,",
+                "00:59:19": "et essaie seulement de...",
+                "01:00:93": "respirer."
+            }
+        },
+        "writtenBy": "Nicolas Dufau",
+        "readBy": "Lola Voisot"
+    },
+    {
+        "id": "sPO2",
+        "title": "À contretemps",
+        "audioSrc": "audio/stamps/sPO2.mp3",
+        "imageSrc": "images/stamps/sPO2.png",
+        "transcript": {
+            "fr": {
+                "00:00:00": "Pour rattraper le temps qui fuit,",
+                "00:02:34": "celui qui file devant nous,",
+                "00:03:97": "qui toujours des jours se rit",
+                "00:05:92": "et qui du retour se joue.",
+                "00:07:99": "Pour rattraper le temps perdu,",
+                "00:09:59": "gardons gravé qu'il ne dure guère",
+                "00:11:60": "et qu'aussitôt il a disparu,",
+                "00:13:25": "car le propre des heures est d'être éphémères.",
+                "00:16:37": "Pour rattraper le temps qui court,",
+                "00:17:85": "que lenteur et torpeur déboussolent,",
+                "00:19:79": "il faut tenter de situer les jours :",
+                "00:21:68": "l'horloge sera notre boussole.",
+                "00:24:16": "Pour rattraper le temps qu'on quitte,",
+                "00:25:71": "c'est l'inverse de toutes les courses :",
+                "00:27:37": "il ne sert pas d'aller vite,",
+                "00:28:74": "mais de revenir à la source.",
+                "00:31:45": "Le temps s'attrape en le prenant,",
+                "00:32:90": "en y passant ses minutes, ses instants.",
+                "00:35:07": "En arrêtant de vouloir l'étirer,",
+                "00:37:04": "voilà ce qui suffit à l'attirer.",
+                "00:39:88": "Pour rattraper le temps,",
+                "00:40:99": "rien ne sert de courir,",
+                "00:42:45": "mieux vaut ne pas partir.",
+                "00:44:50": "Pour rattraper le temps,",
+                "00:45:46": "n'ayez pas peur d'être lent :",
+                "00:47:04": "nul élan, pas besoin de vitesse,",
+                "00:49:27": "le temps n'est pas de ce qu'on presse.",
+                "00:51:27": "Pour l'attraper et le saisir,",
+                "00:52:84": "il faut juste savoir ralentir."
+            }
+        },
+        "writtenBy": "Amélie Maglioli",
+        "readBy": "Lola Voisot"
     }
 ]
