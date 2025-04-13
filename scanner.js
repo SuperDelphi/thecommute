@@ -1,5 +1,7 @@
 export default class Scanner {
-    constructor(canvasId) {
+    constructor(canvasId, successCallback, failureCallback) {
+        this.successCallback = successCallback || function() {};
+        this.failureCallback = failureCallback || function() {};
         this.html5Qrcode = null;
         this.cameraId = null;
         this.canvasId = canvasId;
@@ -29,7 +31,8 @@ export default class Scanner {
                 qrbox: {
                     width: 200,
                     height: 200
-                }
+                },
+                disableFlip: false
             };
 
             // Try environment facing mode
@@ -87,10 +90,28 @@ export default class Scanner {
     }
 
     onScanSuccess(decodedText, decodedResult) {
-        console.log("Ceci est un test : " + decodedText);
+        alert("QR Code scanned successfully: " + decodedText);
+        this.successCallback(decodedText, decodedResult);
     }
 
-    onScanFailure(error) {}
+    onScanFailure(error) {
+        const videoElement = document.querySelector(`#${this.canvasId} video`);
+        const canvasElement = document.querySelector(`#${this.canvasId} canvas`);
+        const context = canvasElement.getContext("2d");
+
+        if (videoElement && context) {
+            const videoWidth = videoElement.videoWidth;
+            const videoHeight = videoElement.videoHeight;
+
+            // Draw the video frame to the canvas
+            context.filter = "invert(100%)";
+            context.drawImage(videoElement, 0, 0, videoWidth, videoHeight);
+
+            // Attempt to scan the QR code
+            this.html5Qrcode.scanImage(canvasElement);
+        }
+        this.failureCallback(error);
+    }
 
     stop() {
         if (this.html5Qrcode && this.html5Qrcode.isScanning) {
