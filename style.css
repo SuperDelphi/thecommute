@@ -52,7 +52,7 @@ body {
 
 :root {
     --primary: #2456ac;
-    --secondary: rgb(0, 0, 0)
+    --secondary: #08204b;
 }
 
 #scanner-container {
